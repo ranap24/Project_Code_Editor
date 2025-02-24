@@ -17,7 +17,7 @@ router.get('/result/:token', async (req, res) => {
     console.log(token); 
 
     try {
-        const response = await axios.get(`${JUDGE0_API_URL}/submissions/${token}?`,{
+        const response = await axios.get(`${JUDGE0_API_URL}/submissions/${token}?base64_encoded=false&fields=stdout,time,memory,stderr,token,compile_output,message,status&page=4&per_page=2`,{
             headers: {
                 'Content-Type': 'application/json',
             }   
@@ -36,7 +36,7 @@ router.post('/execute', async (req, res) => {
     console.log(JUDGE0_API_URL);
 
     try {
-        const response = await axios.post(`${JUDGE0_API_URL}/submissions`, {
+        const response = await axios.post(`${JUDGE0_API_URL}/submissions/?base64_encoded=false`, {
             source_code,
             language_id,
             stdin,

@@ -1,0 +1,32 @@
+body{
+    background-color: #E1E1DD;
+}
+
+.App {
+    position: relative;
+    height: 100vh;
+  }
+  
+  .top-left-button {
+    position: absolute;
+    top: 46px;
+    left: 32px;
+    width: 147px;
+    height: 38px;
+    padding: 10px 20px;
+    background-color: #3B3B3B;
+    color: #E1E1DD;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .top-left-button:hover {
+    background-color: #E1E1DD;
+    color: #3B3B3B;
+    border:2px solid #3B3B3B;
+  }
+
+  
+  
