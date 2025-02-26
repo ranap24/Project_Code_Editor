@@ -6,7 +6,8 @@ const HomePage = () => {
     <div className='p-8 gap-4 flex flex-row items-center'>
       <LinkComponent to="/login" theme='dark' text='Login' />
       <LinkComponent to="/register" theme='light' text='Register' />
-      <LinkComponent to="/codeeditor" theme='dark' text='Code Editor' />    
+      <LinkComponent to="/codeeditor" theme='dark' text='Code Editor' />   
+      <LinkComponent to="/courses" theme='light' text='Courses' /> 
     </div>
   )
 }
