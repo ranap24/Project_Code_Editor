@@ -1,5 +1,6 @@
 import React from 'react'
 import SVGComponents from './SVGComponents'
+import Module from './Module'
 
 const CourseDetails = () => {
 
@@ -12,9 +13,27 @@ const CourseDetails = () => {
             topics: ['Python Basics', 'Functions, Built-in Function,Lambda Function', 'File handling,Exception Handling', 'Python Data Structures', 'Python Modules', 'OOPs Concepts', 'Database Connection and more...']
         }
     }
+
+    const modules = [
+        {
+            "title" : "Introduction to Python",
+        },
+        {
+
+            "title": "Variables, Keywords, Data Types",
+        },
+        {
+
+            "title" : "Conditional Statements",
+        },
+        {
+
+            "title": "Functions"
+        }
+    ]
     return (
-        <div className='w-full h-full flex flex-col justify-center items-start bg-paperwhite pl-16 pt-8 pb-16 relative'>
-            <div className='w-full flex flex-col justify-center items-start gap-4 sticky top-8 bg-paperwhite'>
+        <div className='h-full flex flex-col justify-center items-start bg-paperwhite pl-16 pt-8 pb-16 relative'>
+            <div className='flex flex-col justify-center items-start gap-4 sticky top-8 bg-paperwhite'>
             <div className='flex flex-row justify-center items-center'>
                 <h1 className='font-raleway text-[32px] text-paperblack font-normal'>{courses.python.title}</h1>
             </div>
@@ -57,6 +76,15 @@ const CourseDetails = () => {
                             </li>
                         ))}
                     </ul>
+                </div>
+            </div>
+
+            <div className='w-full flex flex-col items-start justify-center gap-4'>
+                <h1 className='font-raleway text-2xl font-bold mt-8'>Course Content</h1>
+                <div className='w-full h-fit flex flex-col items-start justify-center gap-4 '>
+                    <>
+                  {modules.map((module,index) => <Module number={index+1} title={module.title} key={index}/>)}     
+                    </>
                 </div>
             </div>
         </div>

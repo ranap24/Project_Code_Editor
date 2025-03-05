@@ -7,6 +7,9 @@ import Register from './components/Register';
 import Courses from './components/Courses'; 
 import RootLayout from './components/RootLayout';
 import CourseDetails from './components/CourseDetails';
+import About from './components/About';
+import Contact from './components/Contact';
+import Profile from './components/Profile'; 
 
 function App() {
 
@@ -31,6 +34,18 @@ function App() {
               element: <CourseDetails />
             }
           ]
+        },
+        {
+          path : 'about',
+          element: <About/>
+        },
+        {
+          path : 'contact',
+          element : <Contact/>
+        },
+        {
+          path : 'profile',
+          element : <Profile/>
         }
       ]
     },
