@@ -32,7 +32,7 @@ const CourseDetails = () => {
         }
     ]
     return (
-        <div className='h-full flex flex-col justify-center items-start bg-paperwhite pl-16 pt-8 pb-16 relative'>
+        <div className='w-[980px] h-full flex flex-col justify-center items-start bg-paperwhite pl-16 pt-8 pb-16 relative'>
             <div className='flex flex-col justify-center items-start gap-4 sticky top-8 bg-paperwhite'>
             <div className='flex flex-row justify-center items-center'>
                 <h1 className='font-raleway text-[32px] text-paperblack font-normal'>{courses.python.title}</h1>

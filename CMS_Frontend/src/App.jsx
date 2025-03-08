@@ -9,7 +9,10 @@ import RootLayout from './components/RootLayout';
 import CourseDetails from './components/CourseDetails';
 import About from './components/About';
 import Contact from './components/Contact';
-import Profile from './components/Profile'; 
+import Profile from './components/Profile';
+import CoursesEnrolled from './components/CoursesEnrolled';
+import CertificatesEarned from './components/CertificatesEarned';
+import YourProfile from './components/YourProfile'; 
 
 function App() {
 
@@ -45,7 +48,25 @@ function App() {
         },
         {
           path : 'profile',
-          element : <Profile/>
+          element : <Profile/>,
+          children : [
+            {
+              index: true,
+              element: <CoursesEnrolled/>
+            },
+            {
+              path : 'coursesEnrolled',
+              element : <CoursesEnrolled/>
+            },
+            {
+              path : 'certificatesEarned',
+              element : <CertificatesEarned/>
+            },
+            {
+              path : 'yourProfile',
+              element : <YourProfile/>
+            }
+          ]
         }
       ]
     },
