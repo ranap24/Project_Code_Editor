@@ -6,7 +6,7 @@ import LinkComponent from './LinkComponent'
 
 const Login = () => {
     return (
-        <div className='w-full h-screen p-8 bg-paperwhite flex flex-col justify-center items-center relative'>
+        <div className='w-full h-full p-8 bg-paperwhite flex flex-col justify-center items-center relative'>
             <div className='w-fit h-fit flex flex-col justify-center items-center absolute top-8 left-8'>
                 <LinkComponent theme='dark' text='Home' to="/" />
             </div>
@@ -25,7 +25,7 @@ const Login = () => {
                     <p className='font-raleway mx-4'>or</p>
                     <FadingLine direction="horizontal" right />
                 </div>
-                <div className='flex flex-col justify-between items-center'>
+                <div className='w-full flex flex-col justify-between items-center'>
                     <ButtonComponent theme='dark' text='Sign in with Google' type='button' form/>
                     <div className='w-full flex flex-row justify-start items-center my-4'>
                         <a href='#' className='font-raleway'>Forgot Password?</a>

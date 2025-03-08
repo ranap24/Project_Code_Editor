@@ -52,13 +52,13 @@ user_name = "Alice"print(greet(user_name))
     <div className='bg-paperblack grid grid-cols-3 gap-3 w-full h-screen p-4'> 
       <div className='bg-paperwhite col-start-1 col-span-1 rounded-4xl flex flex-col justify-center items-center'> 
         <div className='w-full flex-1 relative flex flex-col justify-center items-start p-8'>  
-          <div className='absolute top-8'>
+          <div>
             <h1 className='font-raleway text-[32px] text-paperblack font-bold'>3.2 Variables in Python</h1>
           </div>
           <div className='flex-1 flex flex-col justify-center items-start w-fit h-fit mt-10'>
             <p dangerouslySetInnerHTML={{ __html: formattedText }} className='text-[16px]/[20px]'></p>
           </div>
-          <div className='flex-1'>
+          <div className='mt-4'>
            <h1 className='text-2xl font-raleway font-bold'>Examples</h1>
            <div className='w-[342px] h-[113px] bg-paperblack rounded-4xl flex flex-col justify-center items-center mt-4'>
             {/* paragraphText */}
@@ -79,10 +79,10 @@ user_name = "Alice"print(greet(user_name))
         </div> 
       </div>
       <div className='col-start-2 col-span-2 bg-paperwhite rounded-4xl relative flex flex-col justify-center items-center'>
-        <div className='absolute top-0 left-0 w-full h-20 border-4 border-paperblack outline-paperblack rounded-4xl flex items-center justify-start pl-16'>
+        <div className='w-full h-20 border-4 border-paperblack outline-paperblack rounded-4xl flex items-center justify-start pl-16'>
           <h1 className='font-raleway text-[32px] text-paperblack font-bold'>Code Editor</h1>
         </div>
-        <div className='w-full h-auto flex flex-col justify-center items-center'> 
+        <div className='flex-1 w-full h-auto flex flex-col justify-evenly items-center'> 
           <div className='w-[760px] h-[433px] bg-paperblack rounded-4xl p-4 overflow-hidden'> 
             <Editor 
               height="100%" 
@@ -99,7 +99,7 @@ user_name = "Alice"print(greet(user_name))
               }}
             />
           </div>
-          <div className='w-full h-20 flex justify-start items-center pl-16 gap-4 mt-4'>
+          <div className='w-full h-20 flex justify-start items-center pl-16 gap-4'>
           <ButtonComponent theme='dark' text='Submit' type = 'button' />
           <ButtonComponent theme='light' text='Ask Help' type = 'button' />
           <ButtonComponent theme='light' text='Community' type = 'button' />
